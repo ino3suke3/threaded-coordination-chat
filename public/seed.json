@@ -1,0 +1,84 @@
+{
+  "threads": [
+    {
+      "id": "thread-top-1",
+      "title": "Top-level coordination",
+      "kind": "top_level",
+      "status": "in_progress",
+      "summary": "Generic coordination thread tracking intake, review, and routing.",
+      "ownerRole": "Sam"
+    },
+    {
+      "id": "thread-work-1",
+      "title": "Workstream prototype",
+      "kind": "workstream",
+      "status": "todo",
+      "summary": "Focused work thread for implementing and reviewing prototype tasks.",
+      "ownerRole": "Agent"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-1",
+      "threadId": "thread-top-1",
+      "senderType": "user",
+      "body": "Start a generic chat coordination prototype that stays domain-free.",
+      "createdAt": "2026-04-04T09:00:00Z"
+    },
+    {
+      "id": "msg-2",
+      "threadId": "thread-top-1",
+      "senderType": "sam",
+      "body": "PoC scope is narrowed to local-only chat, task, plan, approval, and status flow.",
+      "createdAt": "2026-04-04T09:05:00Z"
+    },
+    {
+      "id": "msg-3",
+      "threadId": "thread-work-1",
+      "senderType": "agent",
+      "body": "Prepare the initial UI shell and local state model.",
+      "createdAt": "2026-04-04T09:20:00Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "threadId": "thread-top-1",
+      "sourceMessageId": "msg-1",
+      "title": "Define PoC scope",
+      "description": "Convert the initial request into an explicit MVP scope.",
+      "status": "in_progress",
+      "priority": "high",
+      "owner": "Sam"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-1",
+      "threadId": "thread-top-1",
+      "taskId": "task-1",
+      "stepText": "Define the generic scope and non-goals.",
+      "status": "done",
+      "orderIndex": 1
+    },
+    {
+      "id": "plan-2",
+      "threadId": "thread-top-1",
+      "taskId": "task-1",
+      "stepText": "Review the MVP feature list.",
+      "status": "in_progress",
+      "orderIndex": 2
+    }
+  ],
+  "approvals": [
+    {
+      "id": "approval-1",
+      "threadId": "thread-top-1",
+      "taskId": "task-1",
+      "title": "Approve MVP scope",
+      "reason": "Confirm the local-only and domain-free MVP boundary.",
+      "status": "pending",
+      "decision": null
+    }
+  ]
+}
