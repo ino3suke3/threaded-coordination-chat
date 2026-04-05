@@ -8,9 +8,18 @@ This repository is public-ready for prototype sharing:
 - data starts from local seed JSON and persists with browser localStorage
 - the current scope is intentionally single-user and local-only
 
+![Threaded Coordination Chat overview](./docs/assets/threaded-coordination-chat-overview.png)
+
 ## Why this exists
 
 Many chat interfaces are good at conversation but weak at preserving operational structure. This prototype explores a simple alternative: keep the conversation visible, but let a user manually turn messages into tasks, plans, approvals, and status updates without leaving the thread.
+
+## What this repo demonstrates
+
+- conversation stays visible inside threads
+- messages can be manually converted into tasks
+- tasks can carry plans, approvals, and status
+- structured operational state can live alongside chat without backend complexity
 
 ## Current MVP
 
